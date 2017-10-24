@@ -1,8 +1,8 @@
 
-#Debian
+#Debian <br>
 sudo apt-get install git 
 
-#RedHat
+#RedHat <br>
 yum install git 
 
 
