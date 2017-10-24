@@ -6,21 +6,21 @@ sudo apt-get install git
 yum install git 
 
 
-How to compile 
+#How to compile  <br>
 
 gcc tube.c -o tube
 
-How to execute 
+#How to execute <br>
 
 ./tube bonjour
 
-If you have write permettion 
+#If you have write permettion  <br>
 
-try 
+// try  
 
 chown user tube
 
-or 
+// or 
 
 chmod +x tube
 
