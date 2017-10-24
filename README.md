@@ -11,7 +11,7 @@ If you have write permettion
 
 try 
 
-chow <user> tube
+chown <user> tube
 
 or 
 
