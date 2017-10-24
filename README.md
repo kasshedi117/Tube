@@ -1,4 +1,11 @@
 
+#Debian
+sudo apt-get install git 
+
+#RedHat
+yum install git 
+
+
 How to compile 
 
 gcc tube.c -o tube
