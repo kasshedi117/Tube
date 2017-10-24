@@ -26,12 +26,12 @@ system("clear");
 
 if (pipe(fd) == -1)
 	{
-	perror ("Creation du pipe a Echoué ");
+	perror ("Creation du pipe a Echoue ");
 	exit(1);
 	}
 
 
-//création du fils
+//creation du fils
 
 pid=fork();
 if(!pid) // fils ?
@@ -46,7 +46,7 @@ if(!pid) // fils ?
             exit(4);
 		}
 
-	close(fd[W]);//fermeture du fichier d'Ã©criture par le fils
+	close(fd[W]);//fermeture du fichier d'ecriture par le fils
 	//sleep(2);
 	exit(3);
 }
@@ -57,12 +57,12 @@ wait(NULL);
 close(fd[W]);//fermeture du fichier de lecture par le pere
 if (( Nboctects = read (fd[R],message, 100)) == -1)
 	{
-        perror ("read : Lecture Ã©chouÃ© ");
+        perror ("read : Lecture a echoue ");
         exit(5);
 	}
 message[Nboctects]='\0';
 printf("\n MESSAGE RECU = %s \n",message);
-close(fd[R]);//fermeture du fichier d'Ã©criture par le pere
+close(fd[R]);//fermeture du fichier d'ecriture par le pere
 return 0;
 
 }
